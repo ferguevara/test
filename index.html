@@ -40,17 +40,26 @@
   </header>
   <nav>
     <ul>
-      <li><a href="#" class="active">Home</a></li>
-      <li><a href="#">Services</a></li>
-      <li><a href="#">Clients</a></li>
-      <li><a href="#">Team</a></li>
-      <li><a href="#">Blog</a></li>
-      <li><a href="#">Contact</a></li>
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="index.html#team">Team</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="#contact-us">Contact</a></li>
     </ul>
   </nav>
   <main>
-    <header>
-      <h2>Custom Software <br> Development. With heart.</h2>
+  
+  <div class="video-header">
+		<video id="video-bg" loop="true" preload="auto" autoplay="true" muted="muted" volume="0" poster="vid/aa-videobg-poster.jpg" >
+			<source src="vid/aa-videobg.mp4" type="video/mp4"></source>
+				"Your Browser does not support HTML 5 Video."
+		</video>
+	</div><!-- VIDEO HEADER -->
+
+  
+    <header style="display:none;">
+      <h2>Custom Software <br> Development with Heart</h2>
       <a href="#"><button class="btn btn-go">Contact Us</button></a>
       <div class="arrow-left">
         <a href="#"><img src="img/arrow-left.png"></a>
@@ -60,6 +69,7 @@
         <a href="#"><img src="img/arrow-right.png"></a>
       </div>
     </header>
+    
     <section id="services">
       <h3>/SERVICES/</h3>
 
@@ -70,7 +80,7 @@
           </div>
           <div class="description">
             <h4>Custom software development</h4>
-            <p>Phil Atwill is seriously fun to watch as he charges about the muddy woods. </p>
+            
             <a href="#">Learn more</a>
           </div>
         </div>
@@ -81,7 +91,7 @@
           </div>
           <div class="description">
             <h4>Custom software development</h4>
-            <p>Phil Atwill is seriously fun to watch as he charges about the muddy woods. </p>
+            
             <a href="#">Learn more</a>
           </div>
         </div>
@@ -91,16 +101,17 @@
             <img src="img/icon01.png">
           </div>
           <div class="description">
-            <h4>Custom software development</h4>
-            <p>Phil Atwill is seriously fun to watch as he charges about the muddy woods. </p>
+            <h4>Custom Software Development</h4>
+            
             <a href="#">Learn more</a>
           </div>
-        </div>
-
-      </div>
+        </div><!-- SERVICE -->
+		
+		<div class="clear"></div>
+      </div><!-- .SERVICES -->
 
     </section>
-    <section id="clients">
+    <section id="clients" style="display:none;">
       <h3>/CLIENTS/</h3>
 
       <div class="bg">
@@ -217,14 +228,16 @@
           <a href="#"><button>Read More</button></a>
         </div>
 
-        <div class="article visible-md">
+        <div class="article">
           <img src="img/article-front.jpg">
           <a href="#"><h5>5 Secrets to Quality Software Delivery</h5></a>
           <p>Quality Software works as expected today and can be easily modified 6 months later. How can a team consistently produce software…</p>
           <a href="#"><button>Read More</button></a>
-        </div>
-      </div>
-
+        </div><!-- ARTICLE -->
+        
+        <div class="clear"></div>
+      </div><!-- WRAPPER -->
+	
     </section>
 
     <section id="tagline">
