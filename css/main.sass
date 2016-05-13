@@ -74,7 +74,7 @@ a
 
 .service
   width: 30%
-  /* overflow: auto;
+  overflow: auto
   background-image: url(../img/bg02.jpg)
   padding: 50px 0
   margin: 15px 1.5%
@@ -273,7 +273,7 @@ nav
     padding: 0
     overflow: auto
     margin: 0 auto
-    /* width: 650px
+    width: 650px
 
     li
       float: left
@@ -375,11 +375,6 @@ a
       &:hover
         background-color: $dark-green
 
-    &:first-child
-      /* margin-right: 40px
-
-
-
 #tagline
   background-color: white
   background-image: url('../img/slant03.png')
@@ -412,6 +407,12 @@ a
     width: 30%
     float: left
     margin: 50px 1.5%
+
+    .rouded-img
+      -webkit-border-radius: 400px
+      -moz-border-radius: 400px
+      border-radius: 400px
+
 
     img
       max-width: 120px
@@ -471,9 +472,8 @@ main
 
 #services
   .wrapper
-  /* overflow: auto;
-  max-width: 1280px
-  margin: 0 auto
+    max-width: 1280px
+    margin: 0 auto
 
 @media (min-width:$screen-sm-min)
   header
@@ -489,16 +489,9 @@ main
 
 
 @media (min-width:$screen-md-min)
-  #services
-    .wrapper
-      /* width: 1428px
-
-  .service:nth-child(2)
-    /* margin: 0 15px
 
   .service
     width: 30%
-    /* overflow: auto;
     background-image: url(../img/bg02.jpg)
     padding: 50px 0
     margin: 15px 1.5%
@@ -515,15 +508,6 @@ main
     .wrapper
       max-width: 980px
 
-    .article
-      &:first-child
-        /* margin-right: 0px
-
-      &:nth-child(2)
-        /* margin: 0 40px
-
-      
-    
 
 @media (min-width:$screen-lg-min)
   header
@@ -534,10 +518,6 @@ main
   .service
     width: 48%
     margin: 30px 1%
-
-
-/* ----- DN BLOG EDITS -----
-/* VIDEO BACKGROUND
 
 .video-header
   position: relative
@@ -561,8 +541,6 @@ main
   overflow: hidden
   opacity: 0.8
   transform: translateY(-50%)
-
-/* BLOG
 
 .blog-list-wrapper
   margin: 20px 0 120px 0
@@ -617,20 +595,6 @@ ul.blog-list
     color: #ffffff
     text-decoration: underline
 
-/*
- *a.blog-list-item-title::after {
- *    content: "";
- *    display: block;
- *    position: absolute;
- *    top: -20px;
- *    right: 0;
- *    width: 100%;
- *    height: 100%;
- *    background-image: url(slant-green-ltr.svg);
- *    z-index: 20;
- *    background-size: 100%;
- *    background-repeat: no-repeat;
- *}
 
 a.blog-list-thumb
   opacity: 1
@@ -649,9 +613,7 @@ a.blog-list-thumb
   background: $light-green
   padding: 0
   margin: 0 0 60px 0
-  /* display: flex;
-  /* justify-content: center;
-
+  
 .thumb-block
   width: 34%
   float: left
@@ -679,11 +641,6 @@ a.blog-list-thumb
   float: left
   margin-left: 2%
   position: absolute
-  /* display: flex;
-  /* flex-direction: column;
-  /* justify-content: center;
-  /* height: 100%;
-  /* background: red;
   padding: 0
   left: 34%
   top: 50%
@@ -746,6 +703,7 @@ a.post-author-link:hover
   color: #737373
   font-family: "Open Sans", sans-serif
   -webkit-font-smoothing: antialiased
+
   h1
   h2
     font-family: "Montserrat", "Open Sans", sans-serif
@@ -829,7 +787,7 @@ a.post-author-link:hover
     line-height: normal
 
 @media (min-width: 320px) and (max-width: 760px)
-	
+  
   .service
     width: 90%
     margin: 30px 5%
