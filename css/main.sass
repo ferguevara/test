@@ -284,6 +284,7 @@ nav
         color: $mid-gray
         font-weight: 400
         padding: 20px
+        border-bottom: 3px solid transparent
 
       a:hover, .active
         color: $light-green
@@ -524,11 +525,21 @@ main
   min-height: auto
   height: 70vh
   width: 100%
-  display: block
+  display: flex
   float: none
   background: #616161
   z-index: -2
-
+  flex-direction: column
+  justify-content: center
+  
+  
+  .video-tagline
+    display: block
+    min-width: 250px
+    max-width: 40%
+    height: auto
+    margin: 0 auto
+      
 #video-bg
   position: absolute
   top: 50%
@@ -554,7 +565,7 @@ main
     -webkit-font-smoothing: antialiased
 
 .blog-list-header
-  min-height: auto
+  min-height: initial
   height: 260px
   background: $light-green
   padding: 0
@@ -609,7 +620,7 @@ a.blog-list-thumb
     -webkit-filter: grayscale(100%) contrast(100%)
 
 .blog-post-header
-  min-height: auto
+  min-height: initial
   background: $light-green
   padding: 0
   margin: 0 0 60px 0
@@ -754,7 +765,7 @@ a.post-author-link:hover
     &::before, &::after
       content: ""
 
-/* ---- MISC ----
+/* ---- MISC ---- */
 
 .clear
   clear: both
@@ -787,6 +798,18 @@ a.post-author-link:hover
     line-height: normal
 
 @media (min-width: 320px) and (max-width: 760px)
+  
+  nav
+    ul
+      display: block
+      li
+        float: none
+        a
+          padding: 15px 20px
+          border-top: 1px solid #e5e5e5
+        
+        a:hover, a.active
+          background: #ffffff
   
   .service
     width: 90%
@@ -847,7 +870,7 @@ a.post-author-link:hover
 /* CUSTOM SOFTWARE */
 
 .services
-  min-height: auto
+  min-height: initial
   /* height: 150px */
   width: 100%
   background: #4D4D4D
