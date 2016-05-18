@@ -33,10 +33,12 @@
     <div class="nav-icon">
       <a href="#"><img src="img/hamburger-icon.svg"></a>
     </div>
-    <img src="img/aa-logo.svg" class="logo">
+    <a href="index.html"><img src="img/aa-logo.svg" class="logo"></a>
     <div class="aa-square">
       <a href="#"><img src="img/aa-logo-square.svg"></a>
     </div>
+    
+    
   </header>
   <nav>
     <ul>
@@ -51,6 +53,7 @@
   <main>
   
   <div class="video-header">
+  	<img class="video-tagline" src="vid/video-tagline.svg" alt="" />
     <video id="video-bg" loop="true" preload="auto" autoplay="true" muted="muted" volume="0" poster="vid/aa-videobg-poster.jpg" >
       <source src="vid/aa-videobg.mp4" type="video/mp4"></source>
         "Your Browser does not support HTML 5 Video."
@@ -281,9 +284,9 @@
             <h4>/STAY CONNECTED/</h4>
 
             <div class="social-icons">
-              <a href="#"><img src="img/facebook-icon.svg"></a>
-              <a href="#"><img src="img/twitter-icon.svg"></a>
-              <a href="#"><img src="img/linked-in-icon.svg"></a>
+              <a target="_blank" href="https://www.facebook.com/acklenavenue/"><img src="img/facebook-icon.svg"></a>
+              <a target="_blank" href="https://twitter.com/acklenavenue"><img src="img/twitter-icon.svg"></a>
+              <a target="_blank" href="https://www.linkedin.com/company/acklen-avenue"><img src="img/linked-in-icon.svg"></a>
             </div>
           </div>
 
@@ -293,13 +296,20 @@
     </section>
   </main>
   <footer>
-    <p class="text-center">2015 &copy; Acklen Avenue, LLC. ALL Rights Reserved.</p>
+    <p class="text-center">2016 &copy; Acklen Avenue, LLC. All Rights Reserved.</p>
   </footer>
 
   <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
   <script>window.jQuery || document.write('<script src="js/jquery-1.12.0.min.js"><\/script>')</script>
   <script src="js/main.js"></script>
+  
+  <script type="text/javascript">
+  	jQuery('.nav-icon a').click(function(){
+		jQuery('nav').slideToggle();
+	});
 
+  </script>
+  
   <script>
       (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
       function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
