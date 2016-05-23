@@ -716,6 +716,17 @@ a.blog-list-thumb {
     height: auto;
     -webkit-filter: grayscale(100%) contrast(100%); }
 
+.generic-header {
+  min-height: initial;
+  background: #72C02C;
+  padding: 60px 0;
+  margin: 0 0 60px 0;
+  text-align: center; }
+  .generic-header h1 {
+    color: #ffffff;
+    font-weight: normal;
+    letter-spacing: -1px; }
+
 .blog-post-header {
   min-height: initial;
   background: #72C02C;
