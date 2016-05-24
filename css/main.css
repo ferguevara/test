@@ -237,7 +237,7 @@ a {
   a .btn {
     font-weight: 400; }
 
-#mobile-service::before {
+#mobile-service::after {
   content: "";
   position: absolute;
   top: 0;
@@ -249,7 +249,7 @@ a {
   background: url("../img/mobile-service-bg.jpg");
   background-size: cover; }
 
-#web-service::before {
+#web-service::after {
   content: "";
   position: absolute;
   top: 0;
@@ -259,9 +259,10 @@ a {
   width: 100%;
   opacity: 0.2;
   background: url("../img/web-service-bg.jpg");
-  background-size: cover; }
+  background-size: cover;
+  z-index: -1; }
 
-#desktop-service::before {
+#desktop-service::after {
   content: "";
   position: absolute;
   top: 0;
@@ -271,7 +272,8 @@ a {
   width: 100%;
   opacity: 0.2;
   background: url("../img/desktop-service-bg.jpg");
-  background-size: cover; }
+  background-size: cover;
+  z-index: -1; }
 
 .service {
   width: 33.33%;
@@ -280,7 +282,8 @@ a {
   float: left;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative; }
+  position: relative;
+  z-index: 1; }
   .service .service-inner {
     position: relative;
     z-index: 1; }
@@ -638,7 +641,7 @@ main header {
 #services .wrapper {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 20px 0; }
+  padding: 20px 20px 82px; }
 
 @media (min-width: 768px) {
   header .nav-icon {
