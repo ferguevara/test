@@ -448,7 +448,7 @@ nav {
 #clients,
 #blog,
 #contact {
-  padding: 45px 0; }
+  padding: 20px 45px 65px; }
 
 #clients {
   padding-bottom: 0; }
@@ -579,6 +579,18 @@ header {
       display: block;
       padding: 20px; }
 
+.tagline {
+  max-width: 800px;
+  margin: 0 auto;
+  color: white; }
+  .tagline h1 {
+    font-size: 3.4em;
+    line-height: 1; }
+  .tagline h4 {
+    font-size: 1.1em;
+    font-weight: normal;
+    line-height: auto; }
+
 main header {
   min-height: 400px;
   background-image: url("../img/bg01.jpg");
@@ -601,10 +613,10 @@ main header {
     font-size: 28px; } }
 @media (min-width: 992px) {
   .service {
-    width: 33.33%;
+    width: 32%;
     background-image: url(../img/bg02.jpg);
     padding: 50px 0;
-    margin: 15px 0%;
+    margin: 15px 0.5%;
     float: left; }
 
   #team .wrapper {
