@@ -72,21 +72,65 @@ a
   .btn
     font-weight: 400
 
+#mobile-service
+  &::before
+    content: ""
+    position: absolute
+    top: 0
+    left: 0
+    display: block
+    height: 100%
+    width: 100%
+    opacity: 0.2
+    background: url('../img/mobile-service-bg.jpg')
+    background-size: cover
+    
+  
+#web-service
+  &::before
+    content: ""
+    position: absolute
+    top: 0
+    left: 0
+    display: block
+    height: 100%
+    width: 100%
+    opacity: 0.2  
+    background: url('../img/web-service-bg.jpg')
+    background-size: cover
+  
+#desktop-service
+  &::before
+    content: ""
+    position: absolute
+    top: 0
+    left: 0
+    display: block
+    height: 100%
+    width: 100%
+    opacity: 0.2
+    background: url('../img/desktop-service-bg.jpg')
+    background-size: cover
+
+
 .service
   width: 33.33%
-  overflow: auto
-  background-image: url('../img/bg02.jpg')
   padding: 50px 0
-  margin: 15px 0%
+  margin: 15px 0
   float: left
   background-repeat: no-repeat
-  background-size: 100%
-
+  background-size: cover
+  position: relative
+  
+  .service-inner
+    position: relative
+    z-index: 1
+    
   .icon
     width: 30%
     float: left
     text-align: center
-    padding-top: 50px
+    padding-top: 10px
 
   img
     width: 80px
@@ -101,7 +145,7 @@ a
     line-height: 35px
     color: white
     padding: 0
-    margin: 50px 0 0 0
+    margin: 10px 0 0 0
     -webkit-font-smoothing: antialiased
     letter-spacing: -1px
 
@@ -307,11 +351,10 @@ nav
     margin-bottom: 80px
 
 #contact-us,
-#services,
 #clients,
 #blog,
 #contact
-  padding: 45px 0
+  padding: 20px 45px 65px
 
 #clients
   padding-bottom: 0
@@ -465,6 +508,19 @@ header
       display: block
       padding: 20px
 
+.tagline
+  max-width: 800px
+  margin: 0 auto
+  color: white
+
+  h1
+    font-size: 3.4em
+    line-height: 1
+  h4
+    font-size: 1.1em
+    font-weight: normal  
+    line-height: auto 
+
 main
   header
     min-height: 400px
@@ -477,6 +533,7 @@ main
   .wrapper
     max-width: 1280px
     margin: 0 auto
+    padding: 20px 0
 
 @media (min-width:$screen-sm-min)
   header
@@ -496,10 +553,9 @@ main
 
   
   .service
-    width: 33.33%
-    background-image: url(../img/bg02.jpg)
+    width: 32%
     padding: 50px 0
-    margin: 15px 0%
+    margin: 15px 0.5%
     float: left
 
   #team
