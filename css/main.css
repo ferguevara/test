@@ -237,7 +237,7 @@ a {
   a .btn {
     font-weight: 400; }
 
-#mobile-service::before {
+#mobile-service::after {
   content: "";
   position: absolute;
   top: 0;
@@ -249,7 +249,7 @@ a {
   background: url("../img/mobile-service-bg.jpg");
   background-size: cover; }
 
-#web-service::before {
+#web-service::after {
   content: "";
   position: absolute;
   top: 0;
@@ -259,9 +259,10 @@ a {
   width: 100%;
   opacity: 0.2;
   background: url("../img/web-service-bg.jpg");
-  background-size: cover; }
+  background-size: cover;
+  z-index: -1; }
 
-#desktop-service::before {
+#desktop-service::after {
   content: "";
   position: absolute;
   top: 0;
@@ -271,7 +272,8 @@ a {
   width: 100%;
   opacity: 0.2;
   background: url("../img/desktop-service-bg.jpg");
-  background-size: cover; }
+  background-size: cover;
+  z-index: -1; }
 
 .service {
   width: 33.33%;
@@ -280,7 +282,8 @@ a {
   float: left;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative; }
+  position: relative;
+  z-index: 1; }
   .service .service-inner {
     position: relative;
     z-index: 1; }
@@ -308,7 +311,13 @@ a {
     padding: 10px 0; }
   .service a {
     font-size: 22px;
-    font-weight: normal; }
+    font-weight: normal;
+    padding: 5px 8px;
+    display: inline-block;
+    border-radius: 2px; }
+    .service a:hover {
+      color: #ffffff;
+      background: #72C02C; }
 
 h6 {
   font-size: 16px;
@@ -476,14 +485,14 @@ nav {
   background-color: #f2f2f2;
   background-position: top left;
   background-size: 100%;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  padding: 50px 0; }
   #blog h3 {
     margin-top: 170px;
     margin-bottom: 80px; }
 
 #contact-us,
 #clients,
-#blog,
 #contact {
   padding: 20px 45px 65px; }
 
@@ -542,7 +551,8 @@ a .btn-hollow {
     cursor: pointer;
     outline: none; }
     #blog .article button:hover {
-      background-color: #176433; }
+      background-color: #176433;
+      cursor: pointer; }
 
 #tagline {
   background-color: white;
@@ -617,16 +627,19 @@ header {
       padding: 20px; }
 
 .tagline {
-  max-width: 800px;
+  max-width: 840px;
+  padding: 0 5%;
   margin: 0 auto;
   color: white; }
   .tagline h1 {
     font-size: 3.4em;
-    line-height: 1; }
+    line-height: 1;
+    letter-spacing: -2px;
+    -webkit-font-smoothing: antialiased; }
   .tagline h4 {
     font-size: 1.1em;
     font-weight: normal;
-    line-height: auto; }
+    line-height: initial; }
 
 main header {
   min-height: 400px;
@@ -638,7 +651,7 @@ main header {
 #services .wrapper {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 20px 0; }
+  padding: 20px 0px 80px; }
 
 @media (min-width: 768px) {
   header .nav-icon {
@@ -679,7 +692,8 @@ main header {
   display: flex;
   float: none;
   background: #616161;
-  z-index: -2;
+  z-index: 0;
+  overflow: hidden;
   flex-direction: column;
   justify-content: center; }
   .video-header .video-tagline {
@@ -1038,6 +1052,10 @@ a.post-author-link:hover {
   font-size: 16px; }
 
 /* ---- MISC ---- */
+.wrapper-hack {
+  position: relative;
+  z-index: 10; }
+
 .video-wrapper {
   position: relative;
   padding-bottom: 56.25%;
@@ -1053,7 +1071,7 @@ a.post-author-link:hover {
 .clear {
   clear: both; }
 
-::-moz-selection, ::selection {
+::selection {
   background: #72C02C; }
 
 .table-center-hack {
@@ -1133,7 +1151,7 @@ a.post-author-link:hover {
 
   .service {
     width: 90%;
-    margin: 30px 5%; }
+    margin: 10px 5%; }
 
   #contact-us .wrapper {
     display: flex;
@@ -1144,8 +1162,10 @@ a.post-author-link:hover {
     float: none; }
 
   #contact-us .contact-info {
-    margin: 10px auto;
-    float: none; }
+    text-align: center;
+    margin: 40px auto;
+    float: none;
+    width: 100%; }
 
   .thumb-block {
     width: 100%;
