@@ -160,6 +160,12 @@ a
   a
     font-size: $type-medium
     font-weight: normal
+    padding: 5px 8px
+    display: inline-block
+    border-radius: 2px
+    &:hover
+      color: #ffffff
+      background: $light-green
 
 h6
   font-size: $type-regular
@@ -349,6 +355,7 @@ nav
   background-position: top left
   background-size: 100%
   background-repeat: no-repeat
+  padding: 50px 0
 
   h3
     margin-top: 170px
@@ -356,7 +363,6 @@ nav
 
 #contact-us,
 #clients,
-#blog,
 #contact
   padding: 20px 45px 65px
 
@@ -423,6 +429,7 @@ a
 
       &:hover
         background-color: $dark-green
+        cursor: pointer
 
 #tagline
   background-color: white
@@ -513,17 +520,20 @@ header
       padding: 20px
 
 .tagline
-  max-width: 800px
+  max-width: 840px
+  padding: 0 5%
   margin: 0 auto
   color: white
-
+    
   h1
     font-size: 3.4em
     line-height: 1
+    letter-spacing: -2px
+    -webkit-font-smoothing: antialiased
   h4
     font-size: 1.1em
     font-weight: normal  
-    line-height: auto 
+    line-height: initial 
 
 main
   header
@@ -537,7 +547,7 @@ main
   .wrapper
     max-width: 1280px
     margin: 0 auto
-    padding: 20px 20px 82px
+    padding: 20px 0px 80px
 
 @media (min-width:$screen-sm-min)
   header
@@ -592,7 +602,8 @@ main
   display: flex
   float: none
   background: #616161
-  z-index: -2
+  z-index: 0
+  overflow: hidden
   flex-direction: column
   justify-content: center
   
@@ -972,6 +983,10 @@ a.post-author-link:hover
 
 /* ---- MISC ---- */
 
+.wrapper-hack
+  position: relative
+  z-index: 10
+
 .video-wrapper
   position: relative
   padding-bottom: 56.25%
@@ -987,7 +1002,7 @@ a.post-author-link:hover
 .clear
   clear: both
 
-::-moz-selection, ::selection
+::selection
   background: $light-green
 
 .table-center-hack
@@ -1077,7 +1092,7 @@ a.post-author-link:hover
   
   .service
     width: 90%
-    margin: 30px 5%
+    margin: 10px 5%
 
   
 
@@ -1093,8 +1108,10 @@ a.post-author-link:hover
 
   #contact-us
     .contact-info
-      margin: 10px auto
+      text-align: center
+      margin: 40px auto
       float: none
+      width: 100%
 
   .thumb-block
     width: 100%
