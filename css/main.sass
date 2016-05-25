@@ -160,6 +160,12 @@ a
   a
     font-size: $type-medium
     font-weight: normal
+    padding: 5px 8px
+    display: inline-block
+    border-radius: 2px
+    &:hover
+      color: #ffffff
+      background: $light-green
 
 h6
   font-size: $type-regular
@@ -175,14 +181,52 @@ h6
     background-position: bottom right
     background-repeat: no-repeat
     background-size: 100%
-    height: 330px
     background-color: $light-gray
 
   .wrapper
     overflow: auto
     padding-top: 50px
-    width: 675px
+    width: 800px
     margin: 0 auto
+
+  h3
+    color: $mid-gray  
+
+  h4
+    text-align: center
+    color: $mid-gray
+  ul
+    margin: 15px 0
+
+    li
+      display: inline-block
+      vertical-align: middle
+      padding: 12px
+
+      img
+        max-width: 172px 
+  
+  .casestudy
+    overflow: auto
+    width: 100%
+    padding: 30px 0 145px
+
+    img
+      width: 50%
+      float: left
+
+    .casetudy-text
+      width: 50%
+      float: left
+      padding-left: 65px
+
+      h2
+        margin: 0px
+        color: $mid-gray
+
+      p
+        color: $gray-9b    
+
 
 .client
   margin: 0 30px
@@ -355,7 +399,6 @@ nav
     margin-bottom: 80px
 
 #contact-us,
-#clients,
 #blog,
 #contact
   padding: 20px 45px 65px
@@ -513,17 +556,23 @@ header
       padding: 20px
 
 .tagline
-  max-width: 800px
+  max-width: 820px
   margin: 0 auto
   color: white
+  position: relative
+  z-index: 1000
+  padding: 0 1.2% 
 
   h1
     font-size: 3.4em
     line-height: 1
+    letter-spacing: -2px
+    -webkit-font-smoothing: antialiased
+
   h4
     font-size: 1.1em
     font-weight: normal  
-    line-height: auto 
+    line-height: initial
 
 main
   header
@@ -537,7 +586,11 @@ main
   .wrapper
     max-width: 1280px
     margin: 0 auto
-    padding: 20px 20px 82px
+    padding: 20px 0px 82px
+
+
+
+
 
 @media (min-width:$screen-sm-min)
   header
@@ -550,6 +603,7 @@ main
   header
     h2
       font-size: $type-bigger
+
 
 
 @media (min-width:$screen-md-min)
@@ -574,6 +628,7 @@ main
       max-width: 980px
 
 
+
 @media (min-width:$screen-lg-min)
   header
     h2
@@ -592,7 +647,8 @@ main
   display: flex
   float: none
   background: #616161
-  z-index: -2
+  z-index: 0
+  overflow: hidden
   flex-direction: column
   justify-content: center
   
@@ -928,6 +984,7 @@ a.post-author-link:hover
   height: auto
   margin: auto
   margin-top: 20px
+
   img
     width: 80px
 
@@ -972,6 +1029,10 @@ a.post-author-link:hover
 
 /* ---- MISC ---- */
 
+.wrapper-hack
+  position: relative
+  z-index: 10
+
 .video-wrapper
   position: relative
   padding-bottom: 56.25%
@@ -990,9 +1051,18 @@ a.post-author-link:hover
 ::-moz-selection, ::selection
   background: $light-green
 
+::selection
+  background: $light-green
+
 .table-center-hack
   display: table
   margin: 0 auto
+
+
+
+
+
+
   
 /* BLOG MEDIA QUERIES */
 
@@ -1006,7 +1076,7 @@ a.post-author-link:hover
 
 @media (min-width: 320px) and (max-width: 960px)
   .video-header
-    height: 35vh
+    height: 56vh
     &:before
       content: ""
       position: absolute
@@ -1026,9 +1096,6 @@ a.post-author-link:hover
   .blog-post-header h1
     font-size: 28px
     line-height: normal
-  
-  #video-bg
-    display: none
       
   .services-featured
     display: block
@@ -1062,6 +1129,8 @@ a.post-author-link:hover
       width: 80%
 
 @media (min-width: 320px) and (max-width: 760px)
+  .video-header
+    height: 52vh
   
   nav
     ul
@@ -1077,7 +1146,7 @@ a.post-author-link:hover
   
   .service
     width: 90%
-    margin: 30px 5%
+    margin: 10px 5%
 
   
 
@@ -1094,7 +1163,10 @@ a.post-author-link:hover
   #contact-us
     .contact-info
       margin: 10px auto
+      text-align: center
+      margin: 40px auto
       float: none
+      width: 100%
 
   .thumb-block
     width: 100%
@@ -1113,8 +1185,6 @@ a.post-author-link:hover
     .team-member
       width: 31%
       margin: 50px 1%
-      
-      
       
 
 @media (min-width: 320px) and (max-width: 680px)

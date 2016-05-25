@@ -44,8 +44,8 @@
   <nav>
     <ul>
       <li><a href="index.html" class="active">Home</a></li>
-      <li><a href="custom-software.html">Custom Sofware</a></li>
-      <li><a href="clients-item.html">Portfolio</a></li>
+      <li><a href="#services">Custom Sofware</a></li>
+      <li><a href="#clients">Clients</a></li>
       <li><a href="about.html">About Us</a></li>
       <li><a href="blog.html">Blog</a></li>
       <li><a href="#contact-us">Contact</a></li>
@@ -53,26 +53,25 @@
   </nav>
   <main>
   
-  <header class="video-header">
-    
-     <div class="tagline">
-       <h1>We Are in Constant Pursuit of Your App success</h1>
-       <h4>By taking an agile approach we ensure the delivery of clean and useful software every two weeks, prioritizing your most important requirements.</h4>
-       <a href="about.html"><button class="btn btn-go">How Does it Work?</button></a>
-     </div>  
-
-    <video id="video-bg" loop="true" preload="auto" autoplay="true" muted="muted" volume="0" poster="vid/aa-videobg-poster.jpg" >
-      <source src="vid/aa-videobg.mp4" type="video/mp4"></source>
-        "Your Browser does not support HTML 5 Video."
-    </video>
+ <header class="video-header">
+      
+       <div class="tagline"> 
+         <h1>We Are in Constant Pursuit of Your App Success</h1>
+         <h4>By taking an agile approach we ensure the delivery of clean and useful software every two weeks, prioritizing your most important requirements.</h4>
+         <a href="about.html"><button class="btn btn-go">How Does it Work?</button></a>     
+       </div><!-- TAGLINE -->  
+  
+      <video id="video-bg" loop="true" preload="auto" autoplay="true" muted="muted" volume="0" poster="vid/aa-videobg-poster.jpg" >
+        <source src="vid/aa-videobg.mp4" type="video/mp4"></source>
+         "Your Browser does not support HTML 5 Video."
+     </video>
   </header><!-- VIDEO HEADER -->
-
     
     <section id="services">
      
 
       <div class="wrapper">
-       <h3>/SERVICES/</h3>
+       <h3>/CUSTOM SOFWARE/</h3>
         
         <div class="service" id="mobile-service">
           
@@ -115,20 +114,30 @@
       </div><!-- .SERVICES -->
 
     </section>
-    <section id="clients" style="display:none;">
-      <h3>/CLIENTS/</h3>
-
+    <section id="clients">
+      
       <div class="bg">
         <div class="wrapper">
-          <div class="client">
-            <a href="#"><img src="img/client01.png"></a>
-          </div>
-          <div class="client">
-            <a href="#"><img src="img/client01.png"></a>
-          </div>
-          <div class="client">
-            <a href="#"><img src="img/client01.png"></a>
-          </div>
+          <h3>/CLIENTS/</h3>
+            <h4>Customers who have trusted in us:
+            </h4>
+            <ul>
+              <li><img src="img/vanderbilt.png" alt=""></li>
+              <li><img src="img/tafs.png" alt=""></li>
+              <li><img src="img/invivolink.png" alt=""></li>
+              <li><img src="img/juicebox.png" alt=""></li>
+            </ul>
+
+            <div class="casestudy">
+
+              <img src="img/drillnomics-mockup.png" alt="">
+              <div class="casetudy-text">
+                <h2>Drillnomics</h2>
+                <p>an easy-to-use web app that generates high value analytics for the oil and gas industry</p>
+                <a target="_blank" href="drillnomics-case-study.html"><button class="btn btn-go">View Project</button></a>
+              </div>
+            </div>
+
         </div>
       </div>
     </section>
@@ -568,12 +577,12 @@
   <script src="js/main.js"></script>
   
   <script type="text/javascript">
-    jQuery('.nav-icon a').click(function(){
-    jQuery('nav').slideToggle();
+    $('.nav-icon a').click(function(){
+      $('nav').slideToggle();
   });
 
-  jQuery('#team-toggler').click(function(){
-    jQuery('#full-team').slideToggle();
+   $('#team-toggler').click(function(){
+     $('#full-team').slideToggle();
   });
 
 
