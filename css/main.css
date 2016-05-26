@@ -366,7 +366,8 @@ h6 {
         margin: 0px;
         color: #4F4F4F; }
       #clients .casestudy .casetudy-text p {
-        color: #9B9B9B; }
+        color: #9B9B9B;
+        padding-right: 18px; }
 
 .client {
   margin: 0 30px;
@@ -653,7 +654,7 @@ header {
       padding: 20px; }
 
 .tagline {
-  max-width: 850px;
+  max-width: 855px;
   margin: 0 auto;
   color: white;
   position: relative;
@@ -1080,6 +1081,9 @@ a.post-author-link:hover {
   font-size: 16px; }
 
 /* ---- MISC ---- */
+.hidden {
+  display: none; }
+
 .wrapper-hack {
   position: relative;
   z-index: 10; }
@@ -1165,15 +1169,29 @@ a.post-author-link:hover {
         max-width: initial; }
 
   .tech-logos-wrapper img {
-    width: 80%; } }
+    width: 80%; }
+
+  #clients ul li {
+    width: 100%;
+    text-align: center; } }
 @media (min-width: 320px) and (max-width: 760px) {
+  #clients .casestudy .casetudy-text {
+    width: 100%;
+    padding: 0px 50px; }
+  #clients .casestudy img {
+    width: 100%;
+    padding: 0 30px; }
+  #clients .casetudy-text {
+    width: 100%;
+    padding-left: 65px; }
+
   .tagline h1 {
     font-size: 2.8em; }
   .tagline h4 {
     font-size: 0.8em; }
 
   .video-header {
-    height: 55vh; }
+    height: 80vh; }
 
   #video-bg {
     display: none; }

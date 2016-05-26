@@ -207,7 +207,7 @@
         
         
         
-<div id="full-team" style="display:none;">
+<div id="full-team" class="hidden">
   
   <div class="team-member visible-md">
           <img class="rouded-img" src="http://www.gravatar.com/avatar/4980e4a91d1fbf390fd426e28f79910e?s=335">
@@ -537,13 +537,20 @@
 
       <div class="wrapper">
         <div class="contact-form">
-          <form action="#" method="get">
-            <input type="text" id="name" placeholder="Name" />
-            <input type="email" id="email" placeholder="E-mail" />
-            <input type="text" id="project" placeholder="Project Name" />
-            <textarea placeholder="Message"></textarea>
+          <form id="contact-form" >
+            <input type="text" id="contact-name" placeholder="Name" />
+            <input type="email" id="contact-email" placeholder="E-mail" required />
+            <input type="text" id="contact-project" placeholder="Project Name" />
+            <textarea id="contact-message" placeholder="Message"></textarea>
             <input type="submit" value="SEND MESSAGE" />
           </form>
+          <div id="sending-message" class="hidden">
+                <h2>Your message is being sent...</h2>
+          </div>
+          <div id="success-message" class="hidden" >
+            <h2>Prepare to be Rocked...</h2>
+          </div>
+
         </div>
 
         <div class="contact-info">
@@ -575,18 +582,7 @@
   <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
   <script>window.jQuery || document.write('<script src="js/jquery-1.12.0.min.js"><\/script>')</script>
   <script src="js/main.js"></script>
-  
-  <script type="text/javascript">
-    $('.nav-icon a').click(function(){
-      $('nav').slideToggle();
-  });
 
-   $('#team-toggler').click(function(){
-     $('#full-team').slideToggle();
-  });
-
-
-  </script>
   
   <script>
       (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
