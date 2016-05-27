@@ -41,9 +41,9 @@
   </header>
   <nav>
     <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="custom-software.html">Custom Software</a></li>
-      <li><a href="clients-item.html">Portfolio</a></li>
+       <li><a href="index.html" >Home</a></li>
+      <li><a href="index.html#services">Custom Sofware</a></li>
+      <li><a href="index.html#clients">Clients</a></li>
       <li><a href="about.html" class="active">About Us</a></li>
       <li><a href="blog.html">Blog</a></li>
       <li><a href="#contact-us">Contact</a></li>
@@ -81,14 +81,21 @@
 
     <div class="wrapper">
       <div class="contact-form">
-        <form action="#" method="get">
-          <input type="text" id="name" placeholder="Name" />
-          <input type="email" id="email" placeholder="E-mail" />
-          <input type="text" id="project" placeholder="Project Name" />
-          <textarea placeholder="Message"></textarea>
-          <input type="submit" value="SEND MESSAGE" />
-        </form>
-      </div>
+          <form id="contact-form" >
+            <input type="text" id="contact-name" placeholder="Name" />
+            <input type="email" id="contact-email" placeholder="E-mail" required />
+            <input type="text" id="contact-project" placeholder="Project Name" />
+            <textarea id="contact-message" placeholder="Message"></textarea>
+            <input type="submit" value="SEND MESSAGE" />
+          </form>
+          <div id="sending-message" class="hidden">
+                <h2>Your message is being sent...</h2>
+          </div>
+          <div id="success-message" class="hidden" >
+            <h2>Prepare to be Rocked...</h2>
+          </div>
+
+        </div>
 
       <div class="contact-info">
         <ul>
