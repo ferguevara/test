@@ -454,7 +454,7 @@ h3 {
     margin-bottom: 50px; }
   #contact-us form > * {
     display: block;
-    width: 300px;
+    max-width: 300px;
     margin-bottom: 20px;
     padding: 15px;
     font-size: 14px;
