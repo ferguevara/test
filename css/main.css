@@ -455,6 +455,7 @@ h3 {
   #contact-us form > * {
     display: block;
     max-width: 300px;
+    width: 300px;
     margin-bottom: 20px;
     padding: 15px;
     font-size: 14px;
@@ -641,6 +642,7 @@ header {
   header .arrow-right {
     right: 30px; }
   header .aa-square {
+    display: none;
     width: 32px;
     position: absolute;
     top: 20px;
