@@ -1024,14 +1024,15 @@ a.post-author-link:hover {
   background-color: #72c02c; }
   .services-tagline p {
     color: white;
-    max-width: 700px;
+    max-width: 1020px;
     text-align: center;
     margin: auto;
     padding: 40px 20px 40px 20px;
     font-size: 24px;
     line-height: normal;
     -webkit-font-smoothing: antialiased;
-    letter-spacing: -1px; }
+    letter-spacing: -1px;
+    font-size: 21px; }
 
 .project {
   background-image: url(../img/bg-content01.jpg);
